@@ -20,6 +20,7 @@ OS principal problema que identifiquei nas festas da igreja são:
 * após o pagamento, o atendente confirma o pagamento e gera uma guia com a quantidade de cada produto para disponibilização.
 
 ***MVP
+
 Fase 1: O Banco de Dados (A fundação)
 Onde os produtos, clientes e pedidos vão ficar salvos.
 
