@@ -29,3 +29,6 @@ Fase 3: O Front-end (A interface)
 A tela do catálogo para o fiel comprar, e a tela de administrador para o voluntário do caixa.
 
 
+-----------------PROTÓTIPO-----------------
+
+Criarei um protótipo em C para treinar meu aprendizado e posteriormente farei o sistema usando JAVA + MySQL
