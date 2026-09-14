@@ -3,8 +3,6 @@ Projeto para melhoria na venda de produtos das festas da comunidade
 
 Objetivo final é facilitar a venda/entrega dos produtos comprados na festa da comunidade
 
-***REGRA DE NEGÓCIO***
-
 ---> PROBLEMA <---
 
 OS principal problema que identifiquei nas festas da igreja são:
@@ -19,7 +17,7 @@ OS principal problema que identifiquei nas festas da igreja são:
 * no dia da festa a pessoa bastará apresentar o numero do pedido, o atendentendente com acesso de administrador acessárá o pedido e basta realizar o pagamento.
 * após o pagamento, o atendente confirma o pagamento e gera uma guia com a quantidade de cada produto para disponibilização.
 
-***MVP
+*MVP* _e_ *REGRA DE NEGÓCIO*
 
 Fase 1: O Banco de Dados (A fundação)
 Onde os produtos, clientes e pedidos vão ficar salvos.
