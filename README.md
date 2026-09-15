@@ -31,4 +31,19 @@ A tela do catálogo para o fiel comprar, e a tela de administrador para o volunt
 
 -----------------PROTÓTIPO-----------------
 
-Criarei um protótipo em C para treinar meu aprendizado e posteriormente farei o sistema usando JAVA + MySQL
+Criarei um protótipo em C para treinar meu aprendizado em lógica de programação e posteriormente farei o sistema usando JAVA + MySQL
+
+Para o seu protótipo em C, eu dividi o projeto em 5 Etapas Lógicas.
+(darei um check em qual estarei trabalhando)
+
+(OK)Etapa 1: O Roteador (Menu Principal) - Controle de fluxo
+
+()Etapa 2: O Molde (A Struct) - Estrutura de dados
+
+()Etapa 3: O Estoque (Vetor) - Armazenamento em memória
+
+()Etapa 4: O Cadastro - Entrada de dados e contadores
+
+()Etapa 5: A Venda (Carrinho) - Lógica matemática e busca
+
+
