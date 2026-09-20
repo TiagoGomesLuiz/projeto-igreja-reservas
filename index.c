@@ -2,14 +2,15 @@
 #include <stdlib.h>
 
 int main(){
-    
+    int opcao;
+
     do{
         printf("\n---OPCOES DE ACESSO---\n");
         printf("1- ADMINISTRADOR\n");
         printf("2- FAZER PEDIDO\n");
         printf("3- CAIXA\n");
-        printf("4- SAIR\n");
-        printf("\n\nESCOLHA UMA OPÇÃO: ");
+        printf("0- SAIR\n");
+        printf("\n\nESCOLHA UMA OPCAO: ");
         scanf("%i", &opcao);
 
         switch(opcao) {
@@ -22,11 +23,13 @@ int main(){
             case 3:
                 printf("\n-> ACESSO CAIXA\n");
                 break;
-            case 4:
-                printf("\n-> VOCE ESTA SAINDO\n");
+            case 0:
+                printf("\n-> VOCE SAIU! ATE LOGO...\n");
                 break;
-            
-            default()
+
+            default:
+                printf("\n-> OPCAO INVALIDA! Tente novamente.\n");
+                break;
         }
 
     }while(opcao != 0);
