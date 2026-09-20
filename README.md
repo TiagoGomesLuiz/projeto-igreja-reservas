@@ -36,7 +36,7 @@ Criarei um protótipo em C para treinar meu aprendizado em lógica de programaç
 Para o seu protótipo em C, eu dividi o projeto em 5 Etapas Lógicas.
 (darei um check em qual estarei trabalhando)
 
-(OK)***Etapa 1: O Roteador (Menu Principal) - Controle de fluxo
+(DOING)***Etapa 1: O Roteador (Menu Principal) - Controle de fluxo
 
 -Laço de Repetição Principal: Criará um loop (do-while) para manter o programa rodando até que o usuário escolha a opção de sair.
 
