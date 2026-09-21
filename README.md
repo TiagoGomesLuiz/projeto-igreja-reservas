@@ -36,15 +36,15 @@ Criarei um protótipo em C para treinar meu aprendizado em lógica de programaç
 Para o seu protótipo em C, eu dividi o projeto em 5 Etapas Lógicas.
 (darei um check em qual estarei trabalhando)
 
-(DOING)***Etapa 1: O Roteador (Menu Principal) - Controle de fluxo
+(OK)***Etapa 1: O Roteador (Menu Principal) - Controle de fluxo
 
-OK-Laço de Repetição Principal: Criará um loop (do-while) para manter o programa rodando até que o usuário escolha a opção de sair.
+OK-Laço de Repetição Principal: criei um loop (do-while) para manter o programa rodando até que o usuário escolha a opção de sair.
 
--Menu de Opções: Exibirá um texto simples no console.
+OK -Menu de Opções: Exibe um texto simples no console.
 
--Captura de Entrada: Usará scanf para ler a escolha do usuário.
+OK -Captura de Entrada: Usei o scanf para ler a escolha do usuário.
 
--Direcionamento: Implementará um bloco switch-case que reconheça o número digitado e imprima uma mensagem provisória (ex: "Entrando no cardápio...") para cada tela, além de tratar opções inválidas.
+OK -Direcionamento: Implementei um bloco switch-case que reconheçe o número digitado e imprime uma mensagem provisória para cada tela, além de tratar as opções inválidas.
 
 ()***Etapa 2: O Molde (A Struct) - Estrutura de dados
 

@@ -15,7 +15,7 @@ int main(){
 
         switch(opcao) {
             case 1:
-                printf("\n\t->->->FAZER SEU PEDIDO<-<-<-\n");
+                printf("\n\t->->->FAZER PEDIDO<-<-<-\n");
                 break;
             case 2:
                 printf("\n***ACESSO ADMINISTRADOR***\n");
