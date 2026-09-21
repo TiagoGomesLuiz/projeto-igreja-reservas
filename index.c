@@ -6,8 +6,8 @@ int main(){
 
     do{
         printf("\n---OPCOES DE ACESSO---\n");
-        printf("1- ADMINISTRADOR\n");
-        printf("2- FAZER PEDIDO\n");
+        printf("1- PEDIDO\n");
+        printf("2- ADMINISTRADOR\n");
         printf("3- CAIXA\n");
         printf("0- SAIR\n");
         printf("\n\nESCOLHA UMA OPCAO: ");
@@ -15,16 +15,16 @@ int main(){
 
         switch(opcao) {
             case 1:
-                printf("\n-> ACESSO DE ADMINISTRADOR\n");
+                printf("\n\t->->->FAZER SEU PEDIDO<-<-<-\n");
                 break;
             case 2:
-                printf("\n-> FAÇA SEU PEDIDO\n");
+                printf("\n***ACESSO ADMINISTRADOR***\n");
                 break;
             case 3:
-                printf("\n-> ACESSO CAIXA\n");
+                printf("\n***ACESSO CAIXA***\n");
                 break;
             case 0:
-                printf("\n-> VOCE SAIU! ATE LOGO...\n");
+                printf("\n--->>>VOCE SAIU! ADEUS...\n");
                 break;
 
             default:

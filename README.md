@@ -38,9 +38,9 @@ Para o seu protótipo em C, eu dividi o projeto em 5 Etapas Lógicas.
 
 (DOING)***Etapa 1: O Roteador (Menu Principal) - Controle de fluxo
 
--Laço de Repetição Principal: Criará um loop (do-while) para manter o programa rodando até que o usuário escolha a opção de sair.
+OK-Laço de Repetição Principal: Criará um loop (do-while) para manter o programa rodando até que o usuário escolha a opção de sair.
 
--Menu de Opções: Exibirá um texto simples no console (ex: 1. Ver Cardápio | 2. Fazer Pedido | 3. Área do Caixa | 0. Sair).
+-Menu de Opções: Exibirá um texto simples no console.
 
 -Captura de Entrada: Usará scanf para ler a escolha do usuário.
 
