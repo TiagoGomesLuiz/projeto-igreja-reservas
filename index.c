@@ -31,7 +31,7 @@ int main(){
                 printf("\n-> OPCAO INVALIDA! Tente novamente.\n");
                 break;
         }
-
+        
     }while(opcao != 0);
 
     return 0;

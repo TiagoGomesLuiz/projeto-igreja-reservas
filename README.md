@@ -46,7 +46,7 @@ OK -Captura de Entrada: Usei o scanf para ler a escolha do usuário.
 
 OK -Direcionamento: Implementei um bloco switch-case que reconheçe o número digitado e imprime uma mensagem provisória para cada tela, além de tratar as opções inválidas.
 
-()***Etapa 2: O Molde (A Struct) - Estrutura de dados
+(DOING)***Etapa 2: O Molde (A Struct) - Estrutura de dados
 
 -Struct de Produto: Definiá as variáveis internas que compõem um item da festa.
 
