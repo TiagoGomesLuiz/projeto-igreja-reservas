@@ -10,27 +10,27 @@ typedef struct{
 
 
 int main(){
-    int opcao;
+    int opcao, i=0;
 
 //declaro os produtos antes do loop para sempre que precisar, busco no mesmo lugar e não repito a cada loop se declarasse dentro do DO/while.
 //para rodar, percebi a economia de código se declarasse como vetor, assim não declaro várias variáveis
     produtos cardapio[16] = {
-    {3301, "Pastel de carne", 6.00},
-    {3302, "Pastel de queijo", 6.00},
-    {3303, "Pastel de pizza", 6.00},
-    {3304, "COSTELA assada (kg)", 45.00},
-    {3305, "PORCO assado (kg)", 35.00},
-    {3306, "FRANGO assado (kg)", 25.00},
-    {3307, "RISOTO (kg)", 20.00},
-    {3308, "MAIONESE (kg)", 15.00},
-    {3309, "ROSCA de laranja", 5.00},
-    {3310, "PEDAÇO de bolo", 5.00},
-    {3311, "Cachorro quente", 7.00},
-    {3312, "Coca Cola lata", 6.50},
-    {3313, "Fanta lata", 6.00},
-    {3314, "Agua garrafa 500ml", 3.00},
-    {3315, "CARTELA Show de prêmios", 10.00},
-    {3316, "RODADA EXTRA", 2.00}
+    {1, "Pastel de carne", 6.00},
+    {2, "Pastel de queijo", 6.00},
+    {3, "Pastel de pizza", 6.00},
+    {4, "COSTELA assada (kg)", 45.00},
+    {5, "PORCO assado (kg)", 35.00},
+    {6, "FRANGO assado (kg)", 25.00},
+    {7, "RISOTO (kg)", 20.00},
+    {8, "MAIONESE (kg)", 15.00},
+    {9, "ROSCA de laranja", 5.00},
+    {10, "PEDACO de bolo", 5.00},
+    {11, "Cachorro quente", 7.00},
+    {12, "Coca Cola lata", 6.50},
+    {13, "Fanta lata", 6.00},
+    {14, "Agua garrafa 500ml", 3.00},
+    {15, "CARTELA Show de premios", 10.00},
+    {16, "RODADA EXTRA", 2.00}
     };
 
 
@@ -48,6 +48,10 @@ int main(){
         switch(opcao) {
             case 1:
                 printf("\n\t->->->FAZER SEU PEDIDO<-<-<-\n");
+                for(i=0;i<16;i++){
+                printf("%d - %s - %.2f\n", cardapio[i].id, cardapio[i].nome, cardapio[i].preco);
+                }
+
                 break;
             case 2:
                 printf("\n***ACESSO ADMINISTRADOR***\n");
