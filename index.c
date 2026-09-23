@@ -11,25 +11,28 @@ typedef struct{
 
 int main(){
     int opcao;
-    
+
 //declaro os produtos antes do loop para sempre que precisar, busco no mesmo lugar e não repito a cada loop se declarasse dentro do DO/while.
-    produtos p1 = {3301, "Pastel de carne", 6.00};
-    produtos p2 = {3302, "Pastel de queijo", 6.00};
-    produtos p3 = {3303, "Pastel de pizza", 6.00};
-    produtos p4 = {3304, "COSTELA assada (kg)", 45.00};
-    produtos p5 = {3305, "PORCO assado (kg)", 35.00};
-    produtos p6 = {3306, "FRANGO assado (kg)", 25.00};
-    produtos p7 = {3307, "RISOTO (kg)", 20.00};
-    produtos p8 = {3308, "MAIONESE (kg)", 15.00};
-    produtos p9 = {3309, "ROSCA de laranja", 5.00};
-    produtos p10 = {3310, "PEDAÇO de bolo", 5.00};
-    produtos p11 = {3311, "Cachorro quente", 7.00};
-    produtos p12 = {3312, "Coca Cola lata", 6.50};
-    produtos p13 = {3313, "Fanta lata", 6.00};
-    produtos p14 = {3314, "Agua garrafa 500ml", 3.00};
-    produtos p15 = {3315, "CARTELA Show de prêmios", 10.00};
-    produtos p16 = {3316, "RODADA EXTRA", 2.00};
-        
+//para rodar, percebi a economia de código se declarasse como vetor, assim não declaro várias variáveis
+    produtos cardapio[16] = {
+    {3301, "Pastel de carne", 6.00},
+    {3302, "Pastel de queijo", 6.00},
+    {3303, "Pastel de pizza", 6.00},
+    {3304, "COSTELA assada (kg)", 45.00},
+    {3305, "PORCO assado (kg)", 35.00},
+    {3306, "FRANGO assado (kg)", 25.00},
+    {3307, "RISOTO (kg)", 20.00},
+    {3308, "MAIONESE (kg)", 15.00},
+    {3309, "ROSCA de laranja", 5.00},
+    {3310, "PEDAÇO de bolo", 5.00},
+    {3311, "Cachorro quente", 7.00},
+    {3312, "Coca Cola lata", 6.50},
+    {3313, "Fanta lata", 6.00},
+    {3314, "Agua garrafa 500ml", 3.00},
+    {3315, "CARTELA Show de prêmios", 10.00},
+    {3316, "RODADA EXTRA", 2.00}
+    };
+
 
 //indico na tela as opcoes de uso do sistema
     do{
@@ -62,8 +65,8 @@ int main(){
         }
 
     }while(opcao != 0);
-    
-    
+
+
 
     return 0;
 }
