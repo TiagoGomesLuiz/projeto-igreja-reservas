@@ -1,9 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-    int opcao;
+//preciso sempre declarar a strct no escopo global para usá-lo diversas vezes
+typedef struct{
+    int id;
+    char nome[50];
+    float preco;
+}produtos;
 
+int main(){
+    int opcao;    
+
+//indico na tela as opcoes de uso do sistema
     do{
         printf("\n---OPCOES DE ACESSO---\n");
         printf("1- PEDIDO\n");
@@ -13,9 +21,10 @@ int main(){
         printf("\n\nESCOLHA UMA OPCAO: ");
         scanf("%i", &opcao);
 
+//resultado da escolha da opcao
         switch(opcao) {
             case 1:
-                printf("\n\t->->->FAZER PEDIDO<-<-<-\n");
+                printf("\n\t->->->FAZER SEU PEDIDO<-<-<-\n");
                 break;
             case 2:
                 printf("\n***ACESSO ADMINISTRADOR***\n");
@@ -31,8 +40,10 @@ int main(){
                 printf("\n-> OPCAO INVALIDA! Tente novamente.\n");
                 break;
         }
-        
+
     }while(opcao != 0);
+    
+    
 
     return 0;
 }
