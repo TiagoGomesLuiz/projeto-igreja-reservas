@@ -8,9 +8,15 @@ typedef struct{
     float preco;
 }produtos;
 
+typedef struct{
+    int idPedido, idProduto, quantidade;
+    float valorTotal;
+}pedido;
 
 int main(){
-    int opcao, i=0;
+    int opcao, i=0, totalVendas = 0;
+    pedido vendas[100];
+
 
 //declaro os produtos antes do loop para sempre que precisar, busco no mesmo lugar e não repito a cada loop se declarasse dentro do DO/while.
 //para rodar, percebi a economia de código se declarasse como vetor, assim não declaro várias variáveis
