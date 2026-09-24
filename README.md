@@ -46,21 +46,21 @@ OK -Captura de Entrada: Usei o scanf para ler a escolha do usuário.
 
 OK -Direcionamento: Implementei um bloco switch-case que reconheçe o número digitado e imprime uma mensagem provisória para cada tela, além de tratar as opções inválidas.
 
-(DOING)***Etapa 2: O Molde (A Struct) - Estrutura de dados
+(OK)***Etapa 2: O Molde (A Struct) - Estrutura de dados //opeti pela struct por organização/legibilidade do código e não pela economia//
 
--Struct de Produto: Definiá as variáveis internas que compõem um item da festa.
+OK-Struct de Produto: Definiá as variáveis internas que compõem um item da festa.
 
--Struct de Pedido: Definirá o formato do "ticket" que o cliente vai gerar.
+OK-Struct de Pedido: Definirá o formato do "ticket" que o cliente vai gerar.
 
-()***Etapa 3: O Estoque (Vetor) - Armazenamento em memória
+(OK)***Etapa 3: O Estoque (Vetor) - Armazenamento em memória
 
--Vetor do Cardápio: Declarará um array de struct Produto com um tamanho fixo.
+OK-Vetor do Cardápio: Declarará um array de struct Produto com um tamanho fixo.
 
--Vetor de Vendas: Declarará um array de struct Pedido para guardar todos os pedidos que forem gerados no dia.
+OK-Vetor de Vendas: Declarará um array de struct Pedido para guardar todos os pedidos que forem gerados no dia.
 
--Variáveis de Controle: Criará contadores globais ou passados por referência para saber em qual posição do vetor você deve salvar o próximo registro.
+OK-Variáveis de Controle: Criará contadores globais ou passados por referência para saber em qual posição do vetor você deve salvar o próximo registro.
 
-()***Etapa 4: O Cadastro - Entrada de dados e contadores
+(DOING)***Etapa 4: O Cadastro - Entrada de dados e contadores
 
 -Função de Inicialização: Criará uma função específica que rode logo no início do programa.
 
