@@ -68,7 +68,7 @@ OK-Carga de Dados Automática: Dentro dessa função, preencher manualmente as p
 
 OK-Função de Exibição: Criar uma função que percorre o vetor de produtos usando um loop for e imprimirá na tela o cardápio formatado para o usuário ler.
 
-()***Etapa 5: A Venda (Carrinho) - Lógica matemática e busca
+(doing)***Etapa 5: A Venda (Carrinho) - Lógica matemática e busca
 
 ---Lógica do Cliente (Fazer Pedido):
 
