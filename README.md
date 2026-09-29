@@ -60,13 +60,13 @@ OK-Vetor de Vendas: Declarará um array de struct Pedido para guardar todos os p
 
 OK-Variáveis de Controle: Criará contadores globais ou passados por referência para saber em qual posição do vetor você deve salvar o próximo registro.
 
-(DOING)***Etapa 4: O Cadastro - Entrada de dados e contadores
+(OK)***Etapa 4: O Cadastro - Entrada de dados e contadores
 
--Função de Inicialização: Criará uma função específica que rode logo no início do programa.
+OK-Função de Inicialização: Criará uma função específica que rode logo no início do programa.
 
--Carga de Dados Automática: Dentro dessa função, preencher manualmente as primeiras posições do vetor de produtos.
+OK-Carga de Dados Automática: Dentro dessa função, preencher manualmente as primeiras posições do vetor de produtos.
 
--Função de Exibição: Criar uma função que percorre o vetor de produtos usando um loop for e imprimirá na tela o cardápio formatado para o usuário ler.
+OK-Função de Exibição: Criar uma função que percorre o vetor de produtos usando um loop for e imprimirá na tela o cardápio formatado para o usuário ler.
 
 ()***Etapa 5: A Venda (Carrinho) - Lógica matemática e busca
 
