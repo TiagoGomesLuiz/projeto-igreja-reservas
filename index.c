@@ -14,7 +14,7 @@ typedef struct{
 }pedido;
 
 int main(){
-    int opcao, i=0, totalVendas = 0, idProduto, quantidade;
+    int opcao, i=0, totalVendas = 0;
     pedido vendas[100];
 
 
@@ -60,13 +60,24 @@ int main(){
                 printf("%d - %s - %.2f\n", cardapio[i].id, cardapio[i].nome, cardapio[i].preco);
                 }
 
-                printf("\n\nDIGITE O NUMERO DO QUE DESEJA: ");
-                scanf("%i %i", &idProduto, &quantidade);
+                int continuarPedido = 1;
+                int numeroTicketAtual = totalVendas +1;
+                float subTotalAtual =0.0;
 
+                do{
+                    int idProduto, quantidade, bingo=0;
+
+                printf("\n\nDIGITE O NUMERO DO PRODUTO DESEJADO: ");
+                scanf("%i", &idProduto);
+
+                printf("\n\nDIGITE A QUANTIDADE: ");
+                scanf("%i", &quantidade);
+
+                //faz a busca pelo cardapio
                 for(i = 0; i <16; i++){
-                    printf("%s", cardapio[i].nome);
                     if(cardapio[i].id == idProduto){
-                        printf("s", )
+                    bingo =1;
+
                     }
                 }
 
