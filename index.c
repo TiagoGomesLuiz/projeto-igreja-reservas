@@ -39,9 +39,6 @@ int main(){
     {16, "RODADA EXTRA", 2.00}
     };
 
-
-
-
 //indico na tela as opcoes de uso do sistema
     do{
         printf("\n---OPCOES DE ACESSO---\n");
@@ -52,34 +49,48 @@ int main(){
         printf("\n\nESCOLHA UMA OPCAO: ");
         scanf("%i", &opcao);
 
-//resultado da escolha da opcao
+        //resultado da escolha da opcao
         switch(opcao) {
             case 1:
-                printf("\n\t->->->FAZER SEU PEDIDO<-<-<-\n");
-                for(i=0;i<16;i++){
-                printf("%d - %s - %.2f\n", cardapio[i].id, cardapio[i].nome, cardapio[i].preco);
-                }
-
                 int continuarPedido = 1;
-                int numeroTicketAtual = totalVendas +1;
-                float subTotalAtual =0.0;
+                int numeroTicketAtual = totalVendas +1;//continua o mesmo numero de ticket
+                float totalTicket =0.0;
 
                 do{
-                    int idProduto, quantidade, bingo=0;
+                printf("\n\t->->->FAZER SEU PEDIDO<-<-<-\n");
+                for(i=0;i<16;i++){
+                    printf("%d - %s - %.2f\n", cardapio[i].id, cardapio[i].nome, cardapio[i].preco);//apresenta todo o cardapio
+                }
 
-                printf("\n\nDIGITE O NUMERO DO PRODUTO DESEJADO: ");
+                int idProduto, quantidade, bingo=0;
+
+                printf("\n\nNUMERO DO PRODUTO DESEJADO: ");
                 scanf("%i", &idProduto);
 
-                printf("\n\nDIGITE A QUANTIDADE: ");
+                printf("\n\nQUANTIDADE: ");
                 scanf("%i", &quantidade);
 
                 //faz a busca pelo cardapio
                 for(i = 0; i <16; i++){
                     if(cardapio[i].id == idProduto){
                     bingo =1;
+
+                    //grava no vetor de vendas no indice - totalVendas
+                    vendas[totalVendas].idPedido = numeroTicketAtual;
+                    vendas[totalVendas].idProduto =cardapio[i].id;
+                    vendas[totalVendas].quantidade =quantidade;
+                    vendas[totalVendas].valorTotal = cardapio[i].preco * quantidade;
+
+                    //soma o total desse pedido (produto X*quantidade=preço)
+                    totalTicket += vendas[totalVendas].valorTotal;
+
+                    printf("\n Item adicionado: %s x%d (R$ %2f)\n", cardapio[i].nome, quantidade, vendas[totalVendas].valorTotal);
+
+                    totalVendas++; // proximo item
+                    break; //fim da busca quanto ao item escolhido
                     }
                 }
-            }while(opcao != 0);
+
             break;
 
             case 2:
