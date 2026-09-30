@@ -77,11 +77,11 @@ int main(){
                 for(i = 0; i <16; i++){
                     if(cardapio[i].id == idProduto){
                     bingo =1;
-
                     }
                 }
+            }while(opcao != 0);
+            break;
 
-                break;
             case 2:
                 printf("\n***ACESSO ADMINISTRADOR***\n");
                 break;
