@@ -72,9 +72,9 @@ OK-Função de Exibição: Criar uma função que percorre o vetor de produtos u
 
 ---Lógica do Cliente (Fazer Pedido):
 
--Pedir para o usuário digitar o ID do produto desejado e a quantidade.
+OK-Pedir para o usuário digitar o ID do produto desejado e a quantidade.
 
--Fará um loop de busca (for) no vetor do cardápio para encontrar aquele ID e descobrir o preço.
+OK-Fará um loop de busca (for) no vetor do cardápio para encontrar aquele ID e descobrir o preço.
 
 -Multiplicará o preço pela quantidade e somar ao total do pedido atual.
 
