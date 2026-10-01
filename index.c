@@ -84,14 +84,33 @@ int main(){
                     //soma o total desse pedido (produto X*quantidade=preço)
                     totalTicket += vendas[totalVendas].valorTotal;
 
-                    printf("\n Item adicionado: %s x%d (R$ %2f)\n", cardapio[i].nome, quantidade, vendas[totalVendas].valorTotal);
+                    printf("\n Item adicionado: %s x%d (R$ %.2f)\n", cardapio[i].nome, quantidade, vendas[totalVendas].valorTotal);
 
                     totalVendas++; // proximo item
                     break; //fim da busca quanto ao item escolhido
                     }
                 }
 
+                if(!bingo){
+                    printf("\n [ERRO] Produto com ID %d nao encontrado!\n", idProduto);
+                }
+
+                //pergunta para continuar comprando
+                printf("\n Deseja continuar comprando? (1-SIM /2-NAO): ");
+                scanf("%i", continuarPedido);
+
+                }while(continuarPedido == 1);
+
+                //mostra o resumo da compra
+                printf("\n****************************************************");
+                printf("\n PEDIDO REALIZADO COM SUCESSO!");
+                printf("\n TICKET N: %d", numeroTicketAtual);
+                printf("\n TOTAL A PAGAR: R$ %.2f, totalTicket");
+                printf("\n****************************************************");
+
             break;
+
+
 
             case 2:
                 printf("\n***ACESSO ADMINISTRADOR***\n");
