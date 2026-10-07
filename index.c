@@ -97,7 +97,7 @@ int main(){
 
                 //pergunta para continuar comprando
                 printf("\n Deseja continuar comprando? (1-SIM /2-NAO): ");
-                scanf("%i", continuarPedido);
+                scanf("%i", &continuarPedido);
 
                 }while(continuarPedido == 1);
 
