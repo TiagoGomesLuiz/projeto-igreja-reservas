@@ -52,6 +52,8 @@ int main(){
         //resultado da escolha da opcao
         switch(opcao) {
             case 1:
+                //é necessária as chaves {} após o rótulo "label" quando houver declaração de variável, caso contrário dará erro em C89 e C90
+                {
                 int continuarPedido = 1;
                 int numeroTicketAtual = totalVendas +1;//continua o mesmo numero de ticket
                 float totalTicket =0.0;
@@ -105,12 +107,11 @@ int main(){
                 printf("\n****************************************************");
                 printf("\n PEDIDO REALIZADO COM SUCESSO!");
                 printf("\n TICKET N: %d", numeroTicketAtual);
-                printf("\n TOTAL A PAGAR: R$ %.2f, totalTicket");
+                printf("\n TOTAL A PAGAR: R$ %.2f", totalTicket);
                 printf("\n****************************************************");
 
             break;
-
-
+            }
 
             case 2:
                 printf("\n***ACESSO ADMINISTRADOR***\n");
