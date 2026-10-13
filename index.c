@@ -94,7 +94,7 @@ int main(){
                 }
 
                 if(!bingo){
-                    printf("\n [ERRO] Produto com ID %d nao encontrado!\n", idProduto);
+                    printf("\n [ERRO] Produto de numero %d nao existe!\n", idProduto);
                 }
 
                 //pergunta para continuar comprando
@@ -103,12 +103,30 @@ int main(){
 
                 }while(continuarPedido == 1);
 
-                //mostra o resumo da compra
+                // Mostra o resumo detalhado da compra
                 printf("\n****************************************************");
                 printf("\n PEDIDO REALIZADO COM SUCESSO!");
-                printf("\n TICKET N: %d", numeroTicketAtual);
-                printf("\n TOTAL A PAGAR: R$ %.2f", totalTicket);
-                printf("\n****************************************************");
+                printf("\n TICKET N: %d \n", numeroTicketAtual);
+                printf("----------------------------------------------------\n");
+                printf(" ITENS DO PEDIDO:\n");
+
+                //Passa pelo vetor de vendas oara encontrar todos os itens do ticket
+                for(int j = 0; j < totalVendas; j++) {
+                    if(vendas[j].idPedido == numeroTicketAtual) {
+
+                        // apos isso, busca o nome correspondente no cardapio com o idProduto
+                        for(int k = 0; k < 16; k++) {
+                            if(cardapio[k].id == vendas[j].idProduto) {
+                                printf(" - %s x%d = R$ %.2f\n", cardapio[k].nome, vendas[j].quantidade, vendas[j].valorTotal);
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                printf("----------------------------------------------------\n");
+                printf(" TOTAL A PAGAR: R$ %.2f\n", totalTicket);
+                printf("****************************************************\n");
 
             break;
             }
