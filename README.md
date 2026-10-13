@@ -76,9 +76,9 @@ OK-Pedir para o usuário digitar o ID do produto desejado e a quantidade.
 
 OK-Fará um loop de busca (for) no vetor do cardápio para encontrar aquele ID e descobrir o preço.
 
--Multiplicará o preço pela quantidade e somar ao total do pedido atual.
+OK-Multiplicará o preço pela quantidade e somar ao total do pedido atual.
 
--Gerará o número do pedido, salvará no vetor de vendas e mostrará o resumo para o cliente.
+OK-Gerará o número do pedido, salvará no vetor de vendas e mostrará o resumo para o cliente.
 
 ---Lógica do Caixa (Administrador):
 
