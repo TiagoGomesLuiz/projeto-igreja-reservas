@@ -70,7 +70,7 @@ OK-Função de Exibição: Criar uma função que percorre o vetor de produtos u
 
 (doing)***Etapa 5: A Venda (Carrinho) - Lógica matemática e busca
 
----Lógica do Cliente (Fazer Pedido):
+OK---Lógica do Cliente (Fazer Pedido):
 
 OK-Pedir para o usuário digitar o ID do produto desejado e a quantidade.
 
@@ -80,11 +80,11 @@ OK-Multiplicará o preço pela quantidade e somar ao total do pedido atual.
 
 OK-Gerará o número do pedido, salvará no vetor de vendas e mostrará o resumo para o cliente.
 
----Lógica do Caixa (Administrador):
+(doing)---Lógica do Caixa (Administrador):
 
--Pedir para o voluntário digitar o número do pedido gerado pelo cliente.
+OK-Pedir para o voluntário digitar o número do pedido gerado pelo cliente.
 
--Fazer uma busca no vetor de vendas para encontrar esse pedido.
+(doing)-Fazer uma busca no vetor de vendas para encontrar esse pedido.
 
 -Exibirá o valor total que deve ser cobrado.
 
