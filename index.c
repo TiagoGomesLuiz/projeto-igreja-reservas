@@ -135,9 +135,31 @@ int main(){
             case 2:
                 printf("\n***ACESSO ADMINISTRADOR***\n");
                 break;
-            case 3:
-                printf("\n***ACESSO CAIXA***\n");
+            case 3:{ //chaves abertas igual ao case 1
+                int ticketBuscado, achouTicket=0;
+                float totalCaixa =0.0;
+
+                printf("\n***ACESSO CAIXA - CONSULTA TICKET***\n");
+
+                printf("\nDigite o numero do TICKET: ");
+                scanf("%i",ticketBuscado);
+
+                printf("----------------------------------------------------\n");
+                printf("TICKET NUMERO: %d\n", ticketBuscado);
+                printf("----------------------------------------------------\n");
+                printf("*ITENS COMPRADOS:* %d\n");
+
+                //percorre pelo vetor de vendas para filtrar pelo numero digitado
+                for(int j=0; j<totalVendas; j++){
+                    if(vendas[j].idPedido == ticketBuscado){
+                        achouTicket = 1; //indica que achou o ticket
+
+                    }
+
+                }
+
                 break;
+                }
             case 0:
                 printf("\n--->>>NOS VEMOS NO DIA DA FESTA, FIQUE COM DEUS...\n");
                 break;
