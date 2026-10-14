@@ -119,6 +119,7 @@ int main(){
                             if(cardapio[k].id == vendas[j].idProduto) {
                                 printf(" - %s x%d = R$ %.2f\n", cardapio[k].nome, vendas[j].quantidade, vendas[j].valorTotal);
                                 break;
+                                printf("\n***APRESENTE SEU NUMERO DE TICKET AO CAIXA***\n");
                             }
                         }
                     }
@@ -138,7 +139,7 @@ int main(){
                 printf("\n***ACESSO CAIXA***\n");
                 break;
             case 0:
-                printf("\n--->>>VOCE SAIU! ADEUS...\n");
+                printf("\n--->>>NOS VEMOS NO DIA DA FESTA, FIQUE COM DEUS...\n");
                 break;
 
             default:
