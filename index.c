@@ -154,9 +154,19 @@ int main(){
                     if(vendas[j].idPedido == ticketBuscado){
                         achouTicket = 1; //indica que achou o ticket
 
-                    }
+                        // busca o nome do produto no cardápio usando o idProduto da venda
+                        for(int k = 0; k < 16; k++) {
+                            if(cardapio[k].id == vendas[j].idProduto) {
+                                printf(" - %s x%d = R$ %.2f\n", cardapio[k].nome, vendas[j].quantidade, vendas[j].valorTotal);
 
+                                // soma ao valor total a pagar do ticket
+                                totalCaixa += vendas[j].valorTotal;
+                                break;
+                            }
+                        }
+                    }
                 }
+            }
 
                 break;
                 }
