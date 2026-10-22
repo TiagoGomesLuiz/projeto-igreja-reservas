@@ -106,7 +106,8 @@ int main(){
                 // Mostra o resumo detalhado da compra
                 printf("\n****************************************************");
                 printf("\n PEDIDO REALIZADO COM SUCESSO!");
-                printf("\n TICKET N: %d \n", numeroTicketAtual);
+                printf("\n --->TICKET N: %d", numeroTicketAtual);
+                printf("<---\n");
                 printf("----------------------------------------------------\n");
                 printf(" ITENS DO PEDIDO:\n");
 
@@ -119,7 +120,6 @@ int main(){
                             if(cardapio[k].id == vendas[j].idProduto) {
                                 printf(" - %s x%d = R$ %.2f\n", cardapio[k].nome, vendas[j].quantidade, vendas[j].valorTotal);
                                 break;
-                                printf("\n***APRESENTE SEU NUMERO DE TICKET AO CAIXA***\n");
                             }
                         }
                     }
@@ -127,7 +127,8 @@ int main(){
 
                 printf("----------------------------------------------------\n");
                 printf(" TOTAL A PAGAR: R$ %.2f\n", totalTicket);
-                printf("****************************************************\n");
+                printf("----------------------------------------------------\n");
+                printf("\n***APRESENTE SEU NUMERO DE TICKET AO CAIXA***\n");
 
             break;
             }
@@ -140,33 +141,6 @@ int main(){
                 float totalCaixa =0.0;
 
                 printf("\n***ACESSO CAIXA - CONSULTA TICKET***\n");
-
-                printf("\nDigite o numero do TICKET: ");
-                scanf("%i",ticketBuscado);
-
-                printf("----------------------------------------------------\n");
-                printf("TICKET NUMERO: %d\n", ticketBuscado);
-                printf("----------------------------------------------------\n");
-                printf("*ITENS COMPRADOS:* %d\n");
-
-                //percorre pelo vetor de vendas para filtrar pelo numero digitado
-                for(int j=0; j<totalVendas; j++){
-                    if(vendas[j].idPedido == ticketBuscado){
-                        achouTicket = 1; //indica que achou o ticket
-
-                        // busca o nome do produto no cardápio usando o idProduto da venda
-                        for(int k = 0; k < 16; k++) {
-                            if(cardapio[k].id == vendas[j].idProduto) {
-                                printf(" - %s x%d = R$ %.2f\n", cardapio[k].nome, vendas[j].quantidade, vendas[j].valorTotal);
-
-                                // soma ao valor total a pagar do ticket
-                                totalCaixa += vendas[j].valorTotal;
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
 
                 break;
                 }
