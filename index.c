@@ -128,7 +128,7 @@ int main(){
                 printf("----------------------------------------------------\n");
                 printf(" TOTAL A PAGAR: R$ %.2f\n", totalTicket);
                 printf("----------------------------------------------------\n");
-                printf("\n***APRESENTE SEU NUMERO DE TICKET AO CAIXA***\n");
+                printf("***APRESENTE SEU NUMERO DE TICKET AO CAIXA***\n");
 
             break;
             }
